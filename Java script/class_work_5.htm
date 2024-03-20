@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classroom work-5</title>
+</head>
+<body>
+    <script>
+        let student ={name :"kaali",
+                  age: 24,
+                phy: 46,
+            chem:50,
+        maths:66,
+    };
+    student.eng=77
+    student.hin=99
+    let sum =0;
+    for(key in student){
+        document.write(`${key}:${student[key]}<br>`)
+        if(typeof student[key]==='number'){
+            if(key!=='age'){
+                sum=sum+student[key];
+            }
+        }
+    }
+    document.write(`<br>total:${sum}<br>`)
+    </script>
+    
+</body>
+</html>

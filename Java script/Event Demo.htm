@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT DEMO</title>
+    <script>
+        function chek(ref){
+            let website = prompt(" enter facebook or google");
+            switch(website)
+            {
+                case "google":
+                ref.setAttribute("href","https://www.google.com/search?q=google&rlz=1C1ONGR_en-GBIN1069IN1069&oq=google&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGEEyBggDEEUYPDIGCAQQRRg8MgYIBRBFGEEyBggGEEUYQTIGCAcQRRg80gEIMTM1NWowajSoAgCwAgA&sourceid=chrome&ie=UTF-8&safe=active&ssui=on");
+                return true;
+
+            }
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onclick="chek(this)">click me</a>
+</body>
+</html>

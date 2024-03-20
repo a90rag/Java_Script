@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coreasion</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        //document.write(40+30)
+       /* a = prompt("input to cheque whether it is odd or even: ");
+        if(isNaN(a)){
+            document.write("Not converted into string ")
+        }
+        else{
+            if(a%2==0){
+                document.write("even")
+            }
+            else
+            {
+                document.write("odd")
+            }
+
+
+        }*/
+        /*
+        if(isNaN(a)){
+            document.write("Not converted into string ")
+        }
+        else{
+            f=parseFloat(b)
+        }*/
+        /*a = prompt("input no. :")
+        b = (a%2==0)?document.write("even"):document.write("odd");
+*/
+
+   // a = Number(prompt("enter Month : "))
+    /*switch(a)
+    {
+        case '11':case '12':case '1':case '2':
+        document.write("Winter");
+        break;
+    }*/
+   
+  /*  let i=1;
+    if(a==0){
+        document.write("1");
+    }else
+      while(i<10){
+    
+        a=a*i;
+        document.write(`<br>${a} <br>`);
+           i=i+1;
+    }
+      */
+      let arr = new Array();
+      a=Number(prompt("enter no. of element to make an array:"));
+      for(i=0;i<a;i++){
+        arr.push(prompt("enter "+i+" th element"));
+      }
+      document.write("<br>before sorting:");
+      document.write(arr);
+      document.write("<br>after sorting:");
+      document.write(arr.sort());
+      
+      document.write("<br>after reverse: ");
+      document.write(arr.reverse());
+    </script>
+</body>
+</html>
